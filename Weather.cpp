@@ -2,6 +2,7 @@
 
 Weather::Weather() {
     windSpeed = 0;
+    airDensity = 0.9711;
 }
 
 void Weather::increaseWindSpeed() {
@@ -10,4 +11,8 @@ void Weather::increaseWindSpeed() {
 
 int Weather::getWindSpeed() {
     return windSpeed;
+}
+
+float Weather::getAirDensity() {
+    return airDensity;
 }
