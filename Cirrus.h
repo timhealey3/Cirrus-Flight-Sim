@@ -8,7 +8,8 @@ private:
     int speed;
     int altitude;
     int weight;
-
+    int coefficentLift;
+    int wingArea;
 public:
     // Constructor
     Cirrus();
@@ -24,6 +25,9 @@ public:
     void increaseAltitude(int amount);
     void decreaseAltitude(int amount);
     int getAltitude();
+    int getWeight();
+    int getCoefficientLift();
+    int getWingArea();
 };
 
 #endif

@@ -6,9 +6,12 @@ class Lift {
 private:
     float gravity;
     float airDensity;
+    float lift;
 public:
     // Constructor
     Lift();
+    int calculateLift();
+    float calculateLiftCoefficient();
 };
 
 #endif

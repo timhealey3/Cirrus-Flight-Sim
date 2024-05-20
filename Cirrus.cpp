@@ -5,6 +5,7 @@ Cirrus::Cirrus() {
   speed = 0;
   altitude = 0;
   weight = 2122; // pounds
+  wingArea = 147; // square feet
 }
 
 void Cirrus::turnOn() {
@@ -29,4 +30,12 @@ int Cirrus::getAltitude() {
 
 void Cirrus::increaseSpeed(int amount) {
     speed += amount;
+}
+
+int Cirrus::getWeight() {
+    return weight;
+}
+
+int Cirrus::getWingArea() {
+    return wingArea;
 }
