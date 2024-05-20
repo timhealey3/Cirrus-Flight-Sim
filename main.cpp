@@ -1,10 +1,13 @@
 #include "Cirrus.h"
 #include "Weather.h"
+#include "Lift.h"
 
 int main () {
   int choice = 0;
   // init plane
   Cirrus cirrus;
+  Lift lift;
+  float liftNum;
   Weather weather;
   cirrus.turnOn();
   // get inputs from pilot
@@ -17,6 +20,8 @@ int main () {
           std::cout << "Taking Off" << std::endl;
           while (cirrus.getSpeed() != 150) {
             std::cout << "\nSpeed: " << cirrus.getSpeed() << " Altitude: " << cirrus.getAltitude() << "\n\n\n";
+            liftNum = lift.calculateLift(cirrus.getWingArea(), cirrus.getSpeed());
+            std::cout << liftNum << std::endl;
             cirrus.increaseSpeed(5);
           }
       }

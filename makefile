@@ -5,7 +5,7 @@ CC = g++
 CFLAGS = -std=c++11 -Wall
 
 # Source files
-SOURCES = Cirrus.cpp main.cpp Weather.cpp
+SOURCES = Cirrus.cpp main.cpp Weather.cpp Lift.cpp
 
 # Object files
 OBJECTS = $(SOURCES:.cpp=.o)

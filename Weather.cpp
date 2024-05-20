@@ -2,7 +2,7 @@
 
 Weather::Weather() {
     windSpeed = 0;
-    airDensity = 0.9711;
+    airDensity = 0.0023769f; // slugs/ft^3
 }
 
 void Weather::increaseWindSpeed() {

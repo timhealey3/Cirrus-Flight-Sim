@@ -5,7 +5,7 @@
 class Cirrus {
 private:
     bool turnedOn;
-    int speed;
+    float speed;
     int altitude;
     int weight;
     int coefficentLift;
@@ -20,7 +20,7 @@ public:
     // Function to increase speed
     void increaseSpeed(int amount);
     void decreaseSpeed(int amount);
-    int getSpeed();
+    float getSpeed();
     // Function to increase altitude
     void increaseAltitude(int amount);
     void decreaseAltitude(int amount);

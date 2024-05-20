@@ -10,7 +10,7 @@ private:
 public:
     // Constructor
     Lift();
-    int calculateLift();
+    float calculateLift(int wingArea, float velocityPlane);
     float calculateLiftCoefficient();
 };
 

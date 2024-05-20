@@ -5,7 +5,7 @@ Cirrus::Cirrus() {
   speed = 0;
   altitude = 0;
   weight = 2122; // pounds
-  wingArea = 147; // square feet
+  wingArea = 135; // square feet
 }
 
 void Cirrus::turnOn() {
@@ -20,7 +20,7 @@ void Cirrus::turnOff() {
     std::cout << "Cirrus SR-20 has been turned off\n";
 }
 
-int Cirrus::getSpeed() {
+float Cirrus::getSpeed() {
     return speed;
 }
 
