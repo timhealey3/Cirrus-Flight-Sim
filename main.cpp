@@ -7,8 +7,8 @@ int main () {
   // init plane
   Cirrus cirrus;
   Lift lift;
-  float liftNum;
   Weather weather;
+  float liftNum;
   cirrus.turnOn();
   // get inputs from pilot
   while (choice != 3) {
